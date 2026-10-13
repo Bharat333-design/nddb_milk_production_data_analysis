@@ -7,7 +7,8 @@ This project aims at finding how much progress India made in milk sector for the
 - The raw dataset contains year, milk production in that year and the state. The dataset file in pdf format. 
 - The dataset is downloaded from NDDB official website.
 - Data is recorded for the period 2001-24.
-
+- Total rows 689
+  
 ## Data Gathering 
 Data was extracted from PDF available on [National Dairy Development Board (NDDB)](https://www.nddb.coop/information/stats/milkprodstate). Using Copilot, extracted and restructured data from pdf and saved in an excel file to speed up the process.
 
@@ -85,6 +86,16 @@ Calculated dynamic total milk production using `Pivot Table`
 - Used Year and State in filter
 
 Golden Cross and Moving Averages
+- Create an yearly milk production table using pivot table with year as row and milk as values
+- Right clicked pivot table > Clicked Show value as > Clicked % Difference from > Selected base as year > item as previous
+- Pivot table ready with year and yearly growth
+- Copy pasted the year and yearly growth columns values only using special paste
+- Added one more column of 5 year rolling average
+- Calculated 5 year rolling average using the formula below
+```excel
+= AVERAGE(OFFSET(N4,-4,0,5,1))
+  ```
+- Inserted a lined using year, yearly average and 5 year rolling average
 
 ## Insights
 
@@ -99,6 +110,7 @@ Golden Cross and Moving Averages
     - Ladakh __(210% growth)__
     - Lakshadweep __(200% growth)__
 
+Created the chart.
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/40c21945-a775-4cd2-8caf-63c8be13b342" />
 
  
@@ -196,5 +208,51 @@ Golden Cross and Moving Averages
 | 2022-23 | 3.15%      |
 
 
-  
+State-Level Observations
+| State          | Insight                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| Uttar Pradesh  | Consistent No. 1 since 2001                                             |
+| Madhya Pradesh | Emerged in last 10 years · Consistent Top 3 · High Volumes              |
+| Gujarat        | Always a high milk producer · Consistent Top 4 since 2001               |
+| Maharashtra    | Consistent performer · Maintained 4th or 5th position throughout        |
+| Andhra Pradesh | Historically high producer · Dropped ranks with rise of MP, Guj, MH     |
+| Punjab         | Consistently dropping · Stable growth                                   |
+| Bihar & Rajasthan | Strong growth but still low volume compared to Top 10               |
+| Haryana        | Linear growth after 2020 (COVID) · Expected boom after 2024–25          |
+
+---
+
+Regional Trends
+- **Central India** → Boomed after 2012  
+- **North East** → Stable growth, nothing extraordinary  
+- **West India** → Consistent growth since 2008  
+- **South India** → Consistent growth throughout  
+
+---
+
+Big Fish (Regional Leaders)
+- **Central India** → MP alone produces **90%** of milk from this region  
+- **East India** → Bihar (48%) + WB (31%) = **79%** of region’s milk  
+- **North East India** → Assam (67%) + Tripura (16%) dominate  
+- **North India** → UP (50%) + HR (20%) + PB (14%) = **77%**; RAJ adds 11.5%  
+- **South India** → Andhra (29%) + Karnataka (28%) + Telangana (21%) = **78%**  
+- **West India** → Gujarat (53%) + Maharashtra (46%) = **99%**  
+
+---
+
+🇮🇳 Big Fish (India-Level)
+- **Big Fish 1 (India)** → UP (13%) + MP (10%) + GUJ (9%) + MAH (8%) + Andhra (7%) = **48.8%** of India’s milk  
+- **Big Fish 2 (India)** → North India (31.3%) + South India (24%) = **55.3%** of India’s milk  
+- **Big Fish 3 (India)** →  
+  - North: 31%  
+  - South: 24%  
+  - West: 17%  
+  - Central: 12%  
+  - East: 14%  
+  - North East: 0.01%
+ 
+## Dashboard
+
+(content to be added..)
+ 
 

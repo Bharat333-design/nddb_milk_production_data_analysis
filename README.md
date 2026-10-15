@@ -352,9 +352,53 @@ The project highlights the concentration of milk production across a small numbe
 
 *Dashboard details and screenshots to be added.*
 
-<img width="1444" height="638" alt="Screenshot 2026-10-15 203117" src="https://github.com/user-attachments/assets/79b6e1f7-1373-4f25-92fd-1ca1d3d4d71d" />
+### Structure of Dashboard
+- Heading
+  - Dashboard title
+- Dynamic KPI Section
+     - Milk Production
+          - Total Milk Production in 2023-24 (connected to slicers)
+     - Annual Growth %
+          - Average Annual Growth Rate (connected to slicers)
+     - National Share %
+          - % Contribution to National Produce (connected to slicers)
+     - Rank
+          - National Rank (connected to state slicer)
+- Slicers
+     - Region
+          - All region filter
+     - States
+          - All states filter
+- Trend Analysis Section
+     - YoY % Growth Chart
+        - Year on year growth rate trend (connected to slicers)
+     - Annual Growth Rate % vs 5 Year Rolling % Chart
+        - Comparing annual growth rate % with 5 year rolling % (connected to slicers)
+     - Milk Production Trend Chart
+        - Raw milk produce (Metric tonne) trend (connected to slicers)
+     - Emerging States (Highest Growth) Chart
+        - Highly grown states (connected to region slicer)
+- Regional Analysis Section
+     - Regional Contribution Chart
+        - % Contribution by each region in national produce
+     - States Contribution Chart
+        - Top 5 states and rest of the states % contribution to national produce
+     - Regional Concentration Chart
+        - Top contributor states in each region (connected to region slicer)
+     - Regional Growth Chart
+        - Growth of each region during the period
+     - Top States Table
+        - Top states in terms of produce (connected with Region slicer) (connected to region slicer)
+     - Top Regions Table
+       - Region ranked based on milk produce
+
+Dashboard screenshot with no slicer applied
 
 <img width="1441" height="637" alt="Screenshot 2026-10-15 203159" src="https://github.com/user-attachments/assets/bc03d33c-8a96-4bb9-94e2-27ee91265ed4" />
+
+Dashboard screenshot with slicer applied
+
+<img width="1444" height="638" alt="Screenshot 2026-10-15 203117" src="https://github.com/user-attachments/assets/79b6e1f7-1373-4f25-92fd-1ca1d3d4d71d" />
 
 
 ## Notes for Validation

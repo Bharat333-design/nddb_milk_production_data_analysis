@@ -351,7 +351,11 @@ The project highlights the concentration of milk production across a small numbe
 ## Dashboard
 
 *Dashboard details and screenshots to be added.*
-![Dashboard Demo](assets/dashboard-video-milk.gif)
+
+<img width="1444" height="638" alt="Screenshot 2026-10-15 203117" src="https://github.com/user-attachments/assets/79b6e1f7-1373-4f25-92fd-1ca1d3d4d71d" />
+
+<img width="1441" height="637" alt="Screenshot 2026-10-15 203159" src="https://github.com/user-attachments/assets/bc03d33c-8a96-4bb9-94e2-27ee91265ed4" />
+
 
 ## Notes for Validation
 
